@@ -5,21 +5,21 @@
 class Sp < Formula
   desc "Sourceplane CLI - Infrastructure as Code orchestration"
   homepage "https://github.com/sourceplane/sourceplane"
-  version "0.1.2"
+  version "0.1.3"
   license "Apache-2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/sourceplane/sourceplane/releases/download/v0.1.2/sp_0.1.2_darwin_amd64.tar.gz"
-      sha256 "c4434ae7bb553859dba401195909197e847e6519975982eb7c1afe45988a4bdf"
+      url "https://github.com/sourceplane/sourceplane/releases/download/v0.1.3/sp_0.1.3_darwin_amd64.tar.gz"
+      sha256 "73cfe5dbd03f01bd3d5096db3dfcaf16f257fa6061e33c17a9aa13873a93a893"
 
       def install
         bin.install "sp"
       end
     end
     on_arm do
-      url "https://github.com/sourceplane/sourceplane/releases/download/v0.1.2/sp_0.1.2_darwin_arm64.tar.gz"
-      sha256 "229af87ee1499c685bf5bcb04639a6d9579351bfe268f720f876ea619d32eaad"
+      url "https://github.com/sourceplane/sourceplane/releases/download/v0.1.3/sp_0.1.3_darwin_arm64.tar.gz"
+      sha256 "df98a95d9246a26395ebbfbada2c40e37bd00cf892ca0a86efd3744902a6ed59"
 
       def install
         bin.install "sp"
@@ -30,8 +30,8 @@ class Sp < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/sourceplane/sourceplane/releases/download/v0.1.2/sp_0.1.2_linux_amd64.tar.gz"
-        sha256 "079d4b5d042d3cc0ac147567c9cf3687ff69195058a9ff8a12b38d263a61e376"
+        url "https://github.com/sourceplane/sourceplane/releases/download/v0.1.3/sp_0.1.3_linux_amd64.tar.gz"
+        sha256 "ca36e0453ce47ff805a791c4b6e798471e3b0b10a82377c91a401761cfb3dec7"
 
         def install
           bin.install "sp"
@@ -40,8 +40,8 @@ class Sp < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/sourceplane/sourceplane/releases/download/v0.1.2/sp_0.1.2_linux_arm64.tar.gz"
-        sha256 "e609324b00e59dfdbceb947e4425ae9d9e2ae971ff93357b829217bca0708575"
+        url "https://github.com/sourceplane/sourceplane/releases/download/v0.1.3/sp_0.1.3_linux_arm64.tar.gz"
+        sha256 "7c613b328ee5f28186ee1a0b60e7476638dbc0d2226487308614a590f04364c2"
 
         def install
           bin.install "sp"
