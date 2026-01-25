@@ -5,21 +5,21 @@
 class Thinci < Formula
   desc "Thin-CI - Lightweight CI orchestrator"
   homepage "https://github.com/sourceplane/sourceplane"
-  version "0.2.1"
+  version "0.2.2"
   license "Apache-2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/sourceplane/sourceplane/releases/download/v0.2.1/thinci_0.2.1_darwin_amd64.tar.gz"
-      sha256 "e6fad0640731203771298e561e425f92091d9f8b08191d5f2075a0300a3c6471"
+      url "https://github.com/sourceplane/sourceplane/releases/download/v0.2.2/thinci_0.2.2_darwin_amd64.tar.gz"
+      sha256 "6d5d0f8f88258459124001da93a635edd26870360b242044da8475f8241d8454"
 
       def install
         bin.install "thinci"
       end
     end
     on_arm do
-      url "https://github.com/sourceplane/sourceplane/releases/download/v0.2.1/thinci_0.2.1_darwin_arm64.tar.gz"
-      sha256 "c2e1d0598495bdb7d8dfe1b6f5aa5140c98070f843929897f1e07dd96fbe68f1"
+      url "https://github.com/sourceplane/sourceplane/releases/download/v0.2.2/thinci_0.2.2_darwin_arm64.tar.gz"
+      sha256 "b5a3b930d1533d0157a218cf9d9ef7d77b0ade1a367298742c650b9c23cc0b15"
 
       def install
         bin.install "thinci"
@@ -30,8 +30,8 @@ class Thinci < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/sourceplane/sourceplane/releases/download/v0.2.1/thinci_0.2.1_linux_amd64.tar.gz"
-        sha256 "49f12293d03749b58db036af38ea69223e9928ca237f6b1f4d5bf672ad33dd9d"
+        url "https://github.com/sourceplane/sourceplane/releases/download/v0.2.2/thinci_0.2.2_linux_amd64.tar.gz"
+        sha256 "10051c8e8b5ba5e82b8acea55f9030289af061920af12a916ba1da7ac0bb2df6"
 
         def install
           bin.install "thinci"
@@ -40,8 +40,8 @@ class Thinci < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/sourceplane/sourceplane/releases/download/v0.2.1/thinci_0.2.1_linux_arm64.tar.gz"
-        sha256 "854421e12a288ba090d32c6801495c723cedc4c4018730c3b83e9eb3c13321f1"
+        url "https://github.com/sourceplane/sourceplane/releases/download/v0.2.2/thinci_0.2.2_linux_arm64.tar.gz"
+        sha256 "a21f0d3304b2751fd2dca7118bc3b6a9898e647001de89d26285a479082be272"
 
         def install
           bin.install "thinci"
