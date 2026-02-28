@@ -5,20 +5,20 @@
 class Thin < Formula
   desc "Lightweight CLI that executes provider-native tools"
   homepage "https://github.com/sourceplane/thin"
-  version "0.1.2"
+  version "0.1.3"
 
   on_macos do
     on_intel do
-      url "https://github.com/sourceplane/thin/releases/download/v0.1.2/thin_Darwin_x86_64.tar.gz"
-      sha256 "1266ccc1cf1d73534619bf9d99dd31b326277775a1bb6ecee811a65b7a162295"
+      url "https://github.com/sourceplane/thin/releases/download/v0.1.3/thin_Darwin_x86_64.tar.gz"
+      sha256 "0d03d2b48c9e28add4dbe82ec6b79b12c80cb6e1fa448bb886044297d593c6d7"
 
       def install
         bin.install "thin"
       end
     end
     on_arm do
-      url "https://github.com/sourceplane/thin/releases/download/v0.1.2/thin_Darwin_arm64.tar.gz"
-      sha256 "04b0e799ac3a5f28344a320f306151d863dfcd44d92cdb085bfb7ec78b9f0265"
+      url "https://github.com/sourceplane/thin/releases/download/v0.1.3/thin_Darwin_arm64.tar.gz"
+      sha256 "1225be8550b7cc7cf999c51d2b266f3bf74699886e6c1fe063952e5085d1ed59"
 
       def install
         bin.install "thin"
@@ -29,8 +29,8 @@ class Thin < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/sourceplane/thin/releases/download/v0.1.2/thin_Linux_x86_64.tar.gz"
-        sha256 "269cf38b311fdbb3499109f9150a5e75f1a57e44b7aa19c1e5c85edc90db012a"
+        url "https://github.com/sourceplane/thin/releases/download/v0.1.3/thin_Linux_x86_64.tar.gz"
+        sha256 "45e8877f9ccd0c6aa04df4d40e8a062dacf72efc845a23e2f28dcef3ee560470"
 
         def install
           bin.install "thin"
@@ -39,8 +39,8 @@ class Thin < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/sourceplane/thin/releases/download/v0.1.2/thin_Linux_arm64.tar.gz"
-        sha256 "9677fb31b68119cf791dfc9e7cf0acfce2698a5ef24fc9cb40338c1ffe62d4a4"
+        url "https://github.com/sourceplane/thin/releases/download/v0.1.3/thin_Linux_arm64.tar.gz"
+        sha256 "21f04998ba56c45001610d5fcbabb83484d6f3ddc1153b433fcfe72ed6f75c45"
 
         def install
           bin.install "thin"
